@@ -5,7 +5,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 const socials = [
   { icon: <FiInstagram size={15} />, href: '#' },
   { icon: <FiFacebook size={15} />, href: '#' },
-  { icon: <FaWhatsapp size={15} />, href: 'https://wa.me/919876543210' },
+  { icon: <FaWhatsapp size={15} />, href: 'https://wa.me/919907737323' },
   { icon: <FiYoutube size={15} />, href: '#' },
 ];
 
@@ -74,9 +74,9 @@ export default function Footer() {
           <h4 className="text-xs font-bold uppercase tracking-[0.15em] text-brand-400 mb-5">Contact</h4>
           <div className="space-y-4">
             {[
-              { icon: <FiPhone size={13} />, text: '+91 98765 43210', href: 'tel:+919876543210' },
+              { icon: <FiPhone size={13} />, text: '+91 99077 37323', href: 'tel:+919907737323' },
               { icon: <FiMail size={13} />, text: 'hello@cakepoint.com', href: 'mailto:hello@cakepoint.com' },
-              { icon: <FiMapPin size={13} />, text: '123 Baker Street, Mumbai' },
+              { icon: <FiMapPin size={13} />, text: 'Kolkata, West Bengal' },
             ].map((c, i) => (
               <div key={i} className="flex items-start gap-3">
                 <div className="w-7 h-7 rounded-lg bg-brand-500/10 flex items-center justify-center text-brand-400 flex-shrink-0 mt-0.5">

@@ -8,7 +8,7 @@ import API from '../utils/api';
 const contactInfo = [
   { icon: FiPhone,  label: 'Phone',   value: '+91 99077 37323',                    href: 'tel:+919907737323'          },
   { icon: FiMail,   label: 'Email',   value: 'hello@cakepoint.com',                href: 'mailto:hello@cakepoint.com' },
-  { icon: FiMapPin, label: 'Address', value: '123 Baker Street, Bandra, Mumbai'                                       },
+  { icon: FiMapPin, label: 'Address', value: 'Kolkata, West Bengal' },
 ];
 
 const fadeUp = (delay = 0) => ({
