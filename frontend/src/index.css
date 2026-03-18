@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,600&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { @apply font-body bg-surface text-dark antialiased; }
+  h1,h2,h3 { @apply font-display; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-gold-gradient text-white px-7 py-3.5 rounded-2xl font-semibold text-sm tracking-wide
+           shadow-warm hover:shadow-warm-lg hover:-translate-y-0.5 active:scale-95 transition-all duration-300;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 border-2 border-brand-400 text-brand-600 hover:bg-brand-500 hover:text-white hover:border-brand-500
+           px-7 py-3.5 rounded-2xl font-semibold text-sm tracking-wide transition-all duration-300 hover:-translate-y-0.5;
+  }
+  .btn-dark {
+    @apply inline-flex items-center justify-center gap-2 bg-dark text-white px-7 py-3.5 rounded-2xl font-semibold text-sm tracking-wide
+           hover:bg-dark/80 hover:-translate-y-0.5 transition-all duration-300;
+  }
+  .card {
+    @apply bg-white rounded-3xl shadow-card hover:shadow-card-hover transition-all duration-500 overflow-hidden border border-brand-100/60;
+  }
+  .section-title {
+    @apply text-3xl md:text-5xl font-display font-bold text-dark text-center mb-3 leading-tight;
+  }
+  .section-sub {
+    @apply text-muted text-center mb-12 text-sm md:text-base;
+  }
+  .input-field {
+    @apply w-full border border-brand-100 rounded-2xl px-5 py-3.5 bg-brand-50/40 text-dark placeholder-muted/60
+           focus:outline-none focus:ring-2 focus:ring-brand-300 focus:border-brand-300 transition-all text-sm;
+  }
+  .tag {
+    @apply text-xs font-semibold px-3 py-1 rounded-full;
+  }
+  /* Admin specific */
+  .admin-card {
+    @apply bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden;
+  }
+  .status-pill {
+    @apply inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full;
+  }
+}
+
+/* Gold gradient utility */
+.bg-gold-gradient { background: linear-gradient(135deg, #e8a03c 0%, #d4821a 50%, #b86612 100%); }
+.text-gold { color: #d4821a; }
+
+html { scroll-behavior: smooth; }
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #fdf8f0; }
+::-webkit-scrollbar-thumb { background: linear-gradient(#e8a03c, #b86612); border-radius: 10px; }
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+img { transition: opacity 0.3s ease; }
