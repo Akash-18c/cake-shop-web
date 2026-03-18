@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 export default function WhatsAppButton() {
   const msg = encodeURIComponent('Hi! I want to order a cake from The Cake Point 🎂');
   return (
-    <motion.a href={`https://wa.me/919876543210?text=${msg}`} target="_blank" rel="noopener noreferrer"
+    <motion.a href={`https://wa.me/919907737323?text=${msg}`} target="_blank" rel="noopener noreferrer"
       initial={{ scale: 0, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
       transition={{ delay: 1.2, type: 'spring', stiffness: 200 }}
       whileHover={{ scale: 1.08 }} whileTap={{ scale: 0.95 }}

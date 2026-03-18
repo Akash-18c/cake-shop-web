@@ -36,7 +36,7 @@ export default function Order() {
     const msg = encodeURIComponent(
       `New Order - The Cake Point\n\nName: ${form.customerName}\nPhone: ${form.phone}\nAddress: ${form.address}\nCakes: ${cakeNames}\nDelivery: ${form.deliveryDate}\nMessage: ${form.message || 'None'}\nTotal: Rs.${total}`
     );
-    window.open(`https://wa.me/919876543210?text=${msg}`, '_blank');
+    window.open(`https://wa.me/919907737323?text=${msg}`, '_blank');
   };
 
   if (submitted) {

@@ -6,7 +6,7 @@ import toast from 'react-hot-toast';
 import API from '../utils/api';
 
 const contactInfo = [
-  { icon: FiPhone,  label: 'Phone',   value: '+91 98765 43210',                    href: 'tel:+919876543210'          },
+  { icon: FiPhone,  label: 'Phone',   value: '+91 99077 37323',                    href: 'tel:+919907737323'          },
   { icon: FiMail,   label: 'Email',   value: 'hello@cakepoint.com',                href: 'mailto:hello@cakepoint.com' },
   { icon: FiMapPin, label: 'Address', value: '123 Baker Street, Bandra, Mumbai'                                       },
 ];
@@ -74,7 +74,7 @@ export default function Contact() {
             ))}
           </div>
 
-          <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer"
+          <a href="https://wa.me/919907737323" target="_blank" rel="noopener noreferrer"
             className="flex items-center gap-3 bg-[#25D366] hover:bg-[#20bd5a] text-white px-6 py-3.5 rounded-2xl font-semibold text-sm transition-all hover:-translate-y-0.5 shadow-[0_4px_16px_rgba(37,211,102,0.3)] w-fit mb-8">
             <FaWhatsapp size={20} /> Chat on WhatsApp
           </a>
