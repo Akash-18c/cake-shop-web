@@ -13,6 +13,7 @@ app.use(cors({
     'http://localhost:5173',
     'http://localhost:3000',
     'https://cake-shop-web-theta.vercel.app',
+    'https://cake-shop-web-1.onrender.com',
     process.env.FRONTEND_URL,
   ].filter(Boolean),
   credentials: true,
